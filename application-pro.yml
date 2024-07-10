@@ -1,1 +1,16 @@
+spring:
+    application:
+            name: Config-prod-services
 
+
+# Eureka Client Configuration
+eureka:
+  instance:
+    prefer-ip-address: true
+    client:
+    fetch-registry: true
+    register-with-eureka: true
+    service-url:
+        default-zone: http://localhost:8761/eureka/
+        # registerWithEureka: false
+         #  fetchRegistry: false
